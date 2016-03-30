@@ -1,0 +1,19 @@
+
+public class weakEnemy extends enemy{
+	
+	weakEnemy(int y, int d){
+		
+		xCoord = 130;
+		yCoord = y;
+		width = 40;
+		height = 40;
+		
+		health = 10;
+		speed = 10;
+		creditsOnDeath = 10;
+		distanceTraveled = d;
+		
+		alive = true;
+		
+	}
+}
