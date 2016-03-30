@@ -1,0 +1,64 @@
+import java.awt.Color;
+
+
+public class towerTwo extends tower{
+	
+	public towerTwo(int baseX, int baseY) {
+
+		System.out.println(baseX);
+		cost = 200;
+		damage = 5;
+		range = 200;
+
+		coefficientX = baseX;
+		coefficientY = baseY;
+		centerX = baseX + 50;
+		centerY = baseY + 50;
+
+		towerColor = new Color(255,169,0);
+
+		home1X = coefficientX + 50;
+		home1Y = coefficientY + 10;
+		home2X = coefficientX + 10;
+		home2Y = coefficientY + 85;
+		home3X = coefficientX + 50;
+		home3Y = coefficientY + 70;
+		home4X = coefficientX + 90;
+		home4Y = coefficientY + 85;
+
+		home1XPrime = coefficientX + 50;
+		home1YPrime = coefficientY + 10;
+		home2XPrime = coefficientX + 10;
+		home2YPrime = coefficientY + 85;
+		home3XPrime = coefficientX + 50;
+		home3YPrime = coefficientY + 70;
+		home4XPrime = coefficientX + 90;
+		home4YPrime = coefficientY + 85;
+
+		relativeHome1X = 0;
+		relativeHome1Y = 40;
+		relativeHome2X = -40;
+		relativeHome2Y = -35;
+		relativeHome3X = 0;
+		relativeHome3Y = -20;
+		relativeHome4X = 40;
+		relativeHome4Y = -35;
+
+		xArray = new int[4];
+		yArray = new int[4];
+
+		xArray[0] = home1X;
+		xArray[1] = home2X;
+		xArray[2] = home3X;
+		xArray[3] = home4X;
+
+		yArray[0] = home1Y;
+		yArray[1] = home2Y;
+		yArray[2] = home3Y;
+		yArray[3] = home4Y;
+		
+		targetX = coefficientX + 50;
+		targetY = coefficientY;
+	}
+	
+}
