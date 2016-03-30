@@ -1,0 +1,18 @@
+public class averageEnemy extends enemy{
+
+	public averageEnemy(int y, int d) {
+
+		xCoord = 125;
+		yCoord = y - 25;
+		width = 50;
+		height = 50;
+
+		health = 50;
+		speed = 10;
+		creditsOnDeath = 25;
+		distanceTraveled = d - 25;
+
+		alive = true;
+
+	}
+}
