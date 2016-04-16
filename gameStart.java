@@ -296,12 +296,13 @@ public class gameStart implements MouseListener { // gamestart class that
 		else if (xClick > 0 && xClick <= 100 && yClick > 700 && yClick <= 800) {//activates if info button is clicked
 				JOptionPane.showMessageDialog(//creates message dialog with following text. used to introduce plaers to the game
 						null,
-						"Welcome to Tower Defense! \n The goal of this game is to prevent enemies from reaching the base by placing towers along the path. "
-						+ "\n Different towers have different stats, so choose wisely. The game will progressively speed up, so keep adding! "
-						+ "\n Deleting towers will give half of the original value, so plan carefully."
-						+ "\n Please give me as much feedback as possible so I can continue to improve the game! "
-						+ "\n Thank You to all of the Alpha testers for helping the game improve, and Peter K for the art.\n Enjoy!"
-						+ "\n P.S. Current Record is 48");
+						"Welcome to Tower Defense! The goal of this game is to prevent the enemies from reaching the base. \n "
+						+ "To do this , place towers around the map by first clicking the tower in the left menu and then clicking any open box on the map. \n"
+						+ "Deleting towers will only return 50% of the tower's original price, so plan carefully. \n"
+						+ "The base has 200 health to start, but will decrease every time an enemy reaches it. Larger enemies will do more damage. \n"
+						+ "The current record is round 53, so Good Luck! \n"
+						+ "Special thanks to Peter K. for designing the great images used. Thank you also to the many that tested the game to help me improve it. \n"
+						+ "Recomendations and criticism are always welcome, so please tell me what you think!");
 		}
 		else if(control.panel.getGameOverStatus() && xClick >= 600 && xClick <= 800 && yClick >= 600 && yClick <= 800){//activates if game has ended and player presses restart
 			control.panel.generateBoxList();
